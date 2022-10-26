@@ -1,0 +1,503 @@
+body{
+  background-image: url('img/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.header{
+  height: 100px;
+  background: #333;
+  padding: 0 20px;
+  color: #fff;
+}
+.nome{
+  line-height: 100px;
+  margin-left: 10%;
+  float: left;
+  color: yellow;
+  text-transform: uppercase;
+}
+p{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  color: yellow;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:body
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: black;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+.tudo{
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image{
+    width: 260px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.image::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: 0.4s linear;
+}
+
+.image:hover::before{
+    width: 0;
+}
+
+.image:nth-child(1)::before{
+    background-image: url(images/7.jpg);
+}
+
+.image:nth-child(2)::before{
+    background-image: url(images/6.jpg);
+}
+
+.image:nth-child(3)::before{
+    background-image: url(images/5.jpg);
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.testimonial-section{
+  background: transparent;
+  padding: 21px 0;
+  margin-bottom: 200px;
+}
+
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.testimonial-section h1{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.border1{
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  margin: 40px auto;
+}
+
+.testimonial{
+  background: #f1f1f1;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.test-info{
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.test-pic{
+  width: 50px !important;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.test-name{
+  font-size: 12px;
+  color: #333;
+}
+
+.test-name span{
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.testimonial p{
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+footer{
+  background: black;
+  padding: 90px 0;
+  width: 100%;
+}
+
+.footer-container{
+  height: 100px;
+  max-width: 1300px;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: green;
+  margin-right: 25px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: white;
+}
+
+.txtDireita h1{
+  font-size: 26px;
+}
+
+
+.email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: green;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn{
+  padding: 18px 40px;
+  font-size: 16px;
+  color: white;
+  background: green;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.btn:hover{
+  opacity: 0.6;
+}
+
+.page-content{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtDireita{
+  color: white;
+}
+.txtEsquerda{
+  color: white;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+  @media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+}
+
+}
+
+
+.conteudo2{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #456342;
+  text-align: justify-all;
+  color: white;
+  font-size: 15px;
+  font-family:arial;
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 20px;
+}
+.conteudo2 h2{
+  text-align: center;
+}
+.link{
+  text-align: justify-all;
+  color: blue;
+  font-size: 15px;
+  font-family:arial;
+}
+.imgPag{
+  width: 30%;
+  margin-left: 30%;
+}
+
+.imgPag{
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+}
+
+.imgPag img{
+  width: 100%;
+}
+
+.imgPag::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: 0.4s linear;
+}
+
+.imgPag:hover::before{
+  width: 0;
+}
+
+.imgPag:nth-child(1)::before{
+  background-image: url('img/desmatamento.png');
+}
+.tudo1{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo{
+  margin-bottom: 200px;
+}
+
+.imagPag{
+  width: 30%;
+  margin-left: 30%;
+}
+
+.imagPag{
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+}
+
+.imagPag img{
+  width: 100%;
+}
+
+.imagPag::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: 0.4s linear;
+}
+
+.imagPag:hover::before{
+  width: 0;
+}
+
+.tudo2{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagPag:nth-child(1)::before{
+  background-image: url('img/reflorestamento.png');
+}
+
+@media screen and (max-width:500px){
+  body{
+    margin-bottom: 100%;
+  }
+  .footer-container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .conteudo2{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    margin: 0px;
+  }
+  .tudo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 0 1px;
+  }
+  .image img{
+    width: 100%;
+    height: 100px;
+}
+.tudo2{
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.imagPag{
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+}
+.imgPag{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+}
+}
